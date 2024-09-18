@@ -1,3 +1,4 @@
+import 'package:expence_tracker/widgets/chart/chart.dart';
 import 'package:expence_tracker/widgets/new_expense.dart';
 import 'package:flutter/material.dart';
 import 'package:expence_tracker/models/expense_model.dart';
@@ -89,7 +90,7 @@ class _ExpensesState extends State<Expenses> {
       ),
       body: Column(
         children: [
-          const Text('The chart'),
+          Chart(expenses: _registeredExpences),
           Expanded(
             child: mainContent,
           ),
